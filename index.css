@@ -1,3 +1,44 @@
-h1 {
-    color: brown;
+
+.icon-menu-item
+{
+ width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  border-radius: 6px;
+}
+.header
+{
+    display: flex;
+    justify-content: space-around;
+}
+.icon-menu {
+    
+    
+}
+.pagename {
+    
+    font-size: 35px;    
+}
+.logo-social 
+{
+    display: flex;
+    width: 8%;
+    
+    justify-content: space-between;
+}
+.wrapper-icon-pagename {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 12%;
+    cursor: pointer;
+}
+.logo-social-item {
+    width: 20px;
+    cursor: pointer;
+    
+}
+.logo-social-item:hover {
+    background-color: black;
 }
