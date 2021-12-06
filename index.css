@@ -1,4 +1,8 @@
-
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
 .icon-menu-item
 {
  width: 25px;
@@ -7,10 +11,11 @@
   margin: 6px 0;
   border-radius: 6px;
 }
-.header
-{
+.header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 75px;
 }
 .icon-menu {
     
@@ -30,8 +35,8 @@
 .wrapper-icon-pagename {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 12%;
+    justify-content: space-evenly;
+    width: 15%;
     cursor: pointer;
 }
 .logo-social-item {
@@ -41,4 +46,42 @@
 }
 .logo-social-item:hover {
     background-color: black;
+}
+.banner {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-item {
+    border: solid slateblue 2px;
+    justify-content: space-evenly;
+    width: 450px;
+}
+.banner-item-news {
+    border: solid red 2px;
+    margin-top: 5%;
+}
+.banner-item-title {
+    border: solid yellow 2px;
+    margin-top: 3%;
+    font-size: x-large;
+}
+.banner-item-text {
+    border: solid orange 2px;
+    margin-top: 3%;
+}
+.banner-item-button {
+    text-align: center;
+    margin-top: 8%;
+    color: #fff;
+    background: #2196f3;
+    width: 250px;
+    padding: 10px;
+    border: solid #2196f3 1px;
+    border-radius: 5px;
+    font-size: larger;
+}
+.banner-photo-item {
+    width: 750px;
+    border: solid black 2px;
 }
