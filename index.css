@@ -5,11 +5,12 @@
 }
 .icon-menu-item
 {
- width: 25px;
+  width: 25px;
   height: 3px;
   background-color: black;
   margin: 6px 0;
   border-radius: 6px;
+ 
 }
 .header {
     display: flex;
@@ -17,10 +18,7 @@
     align-items: center;
     height: 75px;
 }
-.icon-menu {
-    
-    
-}
+
 .pagename {
     
     font-size: 35px;    
@@ -50,24 +48,37 @@
 .banner {
     background-color: #f5f5f5;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    height: 400px;
+    margin-top: 3%;
 }
-.banner-item {
-    border: solid slateblue 2px;
+.banner-items {
+    
     justify-content: space-evenly;
-    width: 450px;
+    width: 650px;
+    margin-right: 10%;
 }
 .banner-item-news {
-    border: solid red 2px;
+    
     margin-top: 5%;
+    border: 1px solid #dff3e2;
+    color: #19a52c;
+    background-color: #dff3e2;
+    width: 80px;
+    margin-left: 2%;
+    padding: 5px;
+    text-align: center;
+    
 }
 .banner-item-title {
-    border: solid yellow 2px;
+    
     margin-top: 3%;
-    font-size: x-large;
+    font-size: xx-large;
+    font-family: 'Raleway',sans-serif;
+    
 }
 .banner-item-text {
-    border: solid orange 2px;
+   
     margin-top: 3%;
 }
 .banner-item-button {
@@ -78,10 +89,18 @@
     width: 250px;
     padding: 10px;
     border: solid #2196f3 1px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: larger;
+    cursor: pointer;
+  
 }
+.banner-photo {
+    align-self: center;
+    
+}
+
 .banner-photo-item {
-    width: 750px;
-    border: solid black 2px;
+    width: 550px;
+    box-shadow: 0 20px 20px -20px #000;
+    
 }
