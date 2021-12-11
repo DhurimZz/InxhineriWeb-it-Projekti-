@@ -104,3 +104,63 @@
     box-shadow: 0 20px 20px -20px #000;
     
 }
+.container {
+    border: solid red 2px;
+    display: flex;
+    margin-top: 3%;
+}
+.container-left {
+    border: solid blue 2px;
+    width: 50%;
+}
+.container-left-photo {
+    height: 150px;
+    width: 450px;
+    background-image: url(./Fotot/Healthylifestyle1.jpeg);
+    background-size: cover;
+}
+.container-right {
+    border: solid blue 2px;
+    width: 50%;
+}
+.container-right-items {
+    border: solid greenyellow 2px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+.container-right-photo1 {
+    height: 80px;
+    width: 120px;
+    background-image: url(./Fotot/PhysycalActivity1.jpg);
+    background-size: cover;
+}
+.container-right-photo2 {
+    height: 80px;
+    width: 120px;
+    background-image: url(./Fotot/HealthyFood1.jpg);
+    background-size: cover;
+}
+.container-right-photo3 {
+    height: 80px;
+    width: 120px;
+    background-image: url(./Fotot/HealthySleep1.jpg);
+    background-size: cover;
+}
+.container-right-items-tekst {
+    margin-left: 2%;   
+}
+.container-right-items-title {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.container-items-teks-author {
+    color: #6c757d;
+    font-size: 85%;
+    font-weight: 400;
+    margin-left: 2%;
+}
+}
