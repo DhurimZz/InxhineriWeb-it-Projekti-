@@ -298,6 +298,10 @@
 }
 .footer-items-txt {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
-
+.foter-item-txt-link {
+    text-decoration: none;
+    color: black;
+}
 
