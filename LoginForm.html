@@ -7,28 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <link rel="stylesheet" href="LoginForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
-<body >
-    
+<body>
+
     <div class="container">
-        <div class="container-1">
-            <h2>ACCOUNT LOGIN</h2>
-            <span>USERNAME</span><br>
-            <input type="text" class="container-1-input"><br>
-            <span class="container-1-pass">PASSWORD</span><br>
-            <input type="password" class="container-1-input">
-            <div>
-                <input type="checkbox"><span>Remember me</span>
-                <span>Forgot Password?</span>
-            </div>
-            <div>
-                <button>Login</button>
+        <div class="container-loginform">
+            <div class="container-loginform-items">
+                <span class="loginform-title">ACCOUNT LOGIN</span>
+                <span class="loginform-usernamepassword">USERNAME</span>
+                <input type="text" class="loginform-input">
+                <span class="loginform-usernamepassword">PASSWORD</span>
+                <input type="password" class="loginform-input">
+                <div class="loginform-checkbox">
+                    <label> <input type="checkbox" > Remember me</label>
+                    <span>Forgot Password?</span>
+                </div>
+                <div class="container-loginform-button">
+                    <button class="loginform-button">Login</button>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
