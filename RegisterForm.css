@@ -22,6 +22,10 @@
     align-items: center;
     
 }
+.registerform-title {
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
 .container-registerform-items {
     width: 100%;
     display: flex;
@@ -31,16 +35,36 @@
     display: flex;
 }
 .row-space {
+    width: 100%;
     margin-top: 20px;
 }
+.registerform-input-gander {
+    margin-right: 50px;
+}
 .registerform-input {
+    width: 250px;
     height: 50px;
     padding: 0 20px;
     border-radius: 5px;
     border: 1px solid gray;
+    font-size: larger;
+}
+.container-registerform-citizenship {
+    margin-top: 20px;
+    width: 100%;
+}
+.registerform-citizenship
+{
+    margin-top: 10px;
+    width: 527px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: larger;
 }
 .container-registerform-button {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .registerform-button {
     width: 150px;
