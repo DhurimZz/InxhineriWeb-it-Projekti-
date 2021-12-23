@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="RegisterForm.css">
+    <link rel="stylesheet" href="./css/RegisterForm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -18,58 +18,67 @@
 
     <div class="container">
         <div class="container-registerform">
-            <div class="container-registerform-items">
+            <form id="register-form" class="container-registerform-items">
                 <span class="registerform-title">Regjistrimi </span>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Emri</label><br><br>
-                        <input type="text" class="registerform-input">
+                        <input id="input-emri" type="text" class="registerform-input">
+                        <span id="error-emri"></span>
                     </div>
                     <div class="row-space">
                         <label class="registerform-data">Mbiemri</label><br><br>
-                        <input type="text" class="registerform-input">
+                        <input id="input-mbiemri" type="text" class="registerform-input">
+                        <span id="error-mbiemri"></span>
                     </div>
                 </div>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Ditëlindja</label><br><br>
-                        <input type="date" class="registerform-input">
+                        <input id="input-ditelindja" type="date" class="registerform-input">
+                        <span id="error-ditelindja"></span>
                     </div>
                     <div class="row-space">
                         <div class="row-space-items">
                             <label class="registerform-data">Gjinia</label><br><br>
 
-                            <label class="registerform-input-gander"><input type="radio" class="registerform-input-gandermale" name="gjinia"> Male
+                            <label class="registerform-input-gander"><input id="input-gjinia" type="radio" class="registerform-input-gandermale" name="gjinia" value="male"> Male
                             </label>
-                            <label><input type="radio" class="registerform-input-ganderfemale" name="gjinia">
+                            <label><input id="input-gjinia" type="radio" class="registerform-input-ganderfemale" name="gjinia" value="female">
                                 Female</label>
 
                         </div>
+                        <span id="error-gjinia"></span>
                     </div>
                 </div>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Email</label><br><br>
-                        <input type="email" class="registerform-input">
+                        <input id="input-email" type="email" class="registerform-input">
+                        <span id="error-email"></span>
                     </div>
                     <div class="row-space">
                         <label class="registerform-data">Numri Telefonit</label><br><br>
-                        <input type="text" class="registerform-input">
+                        <input id="input-nrTelefonit" type="text" class="registerform-input">
+                        <span id="error-nrTelefonit"></span>
                     </div>
                 </div>
                 <div class="container-registerform-citizenship">
                     <span>Shtestesia</span><br>
-                    <select class="registerform-citizenship">
-                        <option>Shqipëria</option>
-                        <option>Kosova</option>
+                    <select id="input-shtetesia" class="registerform-citizenship">
+                        <option value="Shqipëria">Shqipëria</option>
+                        <option value="Kosova">Kosova</option>
                     </select>
+                    <span id="error-shtetesia"></span>
                 </div>
                 <div class="container-registerform-button">
                     <button class="registerform-button">Regjistrohu</button>
                 </div>
-            </div>
+                <span id="error-general"></span>
+            </form>
         </div>
     </div>
+    <script src="./js/RegisterForm.js"></script>
 </body>
 
 </html>
