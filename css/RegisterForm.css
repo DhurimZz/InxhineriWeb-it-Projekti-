@@ -10,16 +10,17 @@
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ebebeb;
 }
 .container-registerform {
+    margin-top: 60px;
+    margin-bottom: 60px;
     background:#fff;
     width: 680px;
-    height: 670px;
     padding: 57px 65px;
     padding-bottom: 65px;
     border-radius: 10px;
