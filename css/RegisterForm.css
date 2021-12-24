@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -81,4 +86,8 @@
 }
 .registerform-button:hover {
     background-color:green ;
+}
+.error {
+    font-size: small;
+    color: red;
 }

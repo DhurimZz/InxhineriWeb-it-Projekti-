@@ -18,49 +18,52 @@
 
     <div class="container">
         <div class="container-registerform">
-            <form id="register-form" class="container-registerform-items">
+            <form id="register-form" class="container-registerform-items" method="post">
                 <span class="registerform-title">Regjistrimi </span>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Emri</label><br><br>
                         <input id="input-emri" type="text" class="registerform-input">
-                        <span id="error-emri"></span>
+                        <span id="error-emri" class="error"></span>
                     </div>
                     <div class="row-space">
                         <label class="registerform-data">Mbiemri</label><br><br>
                         <input id="input-mbiemri" type="text" class="registerform-input">
-                        <span id="error-mbiemri"></span>
+                        <span id="error-mbiemri" class="error"></span>
                     </div>
                 </div>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Ditëlindja</label><br><br>
                         <input id="input-ditelindja" type="date" class="registerform-input">
-                        <span id="error-ditelindja"></span>
+                        <span id="error-ditelindja" class="error"></span>
                     </div>
                     <div class="row-space">
-                        <div class="row-space-items">
-                            <label class="registerform-data">Gjinia</label><br><br>
-
-                            <label class="registerform-input-gander"><input id="input-gjinia" type="radio" class="registerform-input-gandermale" name="gjinia" value="male"> Male
+                        <div class="mb-30px">
+                            <span class="registerform-data">Gjinia</span><br><br>
+                            <label class="registerform-input-gander">
+                                <input id="input-gjinia" type="radio"
+                                    class="registerform-input-gandermale" name="gjinia" value="male">
+                                     Male
                             </label>
-                            <label><input id="input-gjinia" type="radio" class="registerform-input-ganderfemale" name="gjinia" value="female">
-                                Female</label>
-
+                            <label>
+                                <input id="input-gjinia" type="radio" class="registerform-input-ganderfemale" name="gjinia" value="female">
+                                Female
+                            </label>
                         </div>
-                        <span id="error-gjinia"></span>
+                        <span id="error-gjinia" class="error"></span>
                     </div>
                 </div>
                 <div class="container-items-space">
                     <div class="row-space">
                         <label class="registerform-data">Email</label><br><br>
                         <input id="input-email" type="email" class="registerform-input">
-                        <span id="error-email"></span>
+                        <span id="error-email" class="error"></span>
                     </div>
                     <div class="row-space">
                         <label class="registerform-data">Numri Telefonit</label><br><br>
                         <input id="input-nrTelefonit" type="text" class="registerform-input">
-                        <span id="error-nrTelefonit"></span>
+                        <span id="error-nrTelefonit" class="error"></span>
                     </div>
                 </div>
                 <div class="container-registerform-citizenship">
@@ -69,12 +72,12 @@
                         <option value="Shqipëria">Shqipëria</option>
                         <option value="Kosova">Kosova</option>
                     </select>
-                    <span id="error-shtetesia"></span>
+                    <span id="error-shtetesia" class="error"></span>
                 </div>
                 <div class="container-registerform-button">
                     <button class="registerform-button">Regjistrohu</button>
                 </div>
-                <span id="error-general"></span>
+                <span id="error-general" class="error"></span>
             </form>
         </div>
     </div>

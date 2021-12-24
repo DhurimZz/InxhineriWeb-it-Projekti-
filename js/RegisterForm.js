@@ -1,14 +1,15 @@
 var registerForm = document.getElementById('register-form');
 
 var emriMbiemriRegex = /^[a-zA-Z ]{2,30}$/;
+var emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var numberRegex = /^\d+$/;;
 
-var emriMbiemriError = "" ;
-var ditlindjaError = "" ;
-var gjiniaError = "" ;
-var emailError = "" ;
-var nrTelefonitError = "" ;
-var shtetesiaError = "" ;
-var generalError = "" ;
+var emriMbiemriErrorMsg = "Gabim emri" ;
+var ditlindjaErrorMsg = "Gabim ditlindja" ;
+var gjiniaErrorMsg = "" ;
+var emailErrorMsg = "Gabim email" ;
+var nrTelefonitErrorMsg= "Gabim nrTelefoinit" ;
+var shtetesiaErrorMsg = "Gabim shtetesia" ;
 
 
 
@@ -21,27 +22,52 @@ var nrTelefonitError = document.getElementById('error-nrTelefonit');
 var shtetesiaError = document.getElementById('error-shtetesia');
 var errorGeneral = document.getElementById('error-general');
 
-function validateFields(value, regex, errorDisplay) {
-    if(value === "" && value === null && !regex.test(value) ) {
+function validateFields(value, regex, errorDisplay, errorMsg) {
+    if(value === "" || value === null  ) {
+        errorDisplay.textContent = "Plotëso fushën!";
         return false;
     }
+
+    // false ose null ose undefined ose 0
+    if( regex && !regex.test(value) ){
+        errorDisplay.textContent = errorMsg;
+        return false;      
+    }
+    errorDisplay.textContent = '';
+    
     return true;
-    errorDisplay.innerHTML="Fusha e zbrazet";
 }
 
 
 registerForm.addEventListener("submit", function(e){ 
     e.preventDefault()
 
-    var emri = document.getElementById('input-emri').value;
-    var mbiemri = document.getElementById('input-mbiemri').value;
-    var ditelindja = document.getElementById('input-ditelindja').value;
-    var gjinia = document.getElementById('input-gjinia').value;
-    var email = document.getElementById('input-email').value;
-    var nrTelefonit = document.getElementById('input-nrTelefonit').value;
-    var shtetesia = document.getElementById('input-shtetesia').value;
+    var emri = document.getElementById('input-emri').value.trim();
+    var mbiemri = document.getElementById('input-mbiemri').value.trim();
+    var ditelindja = document.getElementById('input-ditelindja').value.trim();
+    var gjinia = "";
+    var gjiniaOptions= document.getElementsByName('gjinia');
+    for(var i = 0, length = gjiniaOptions.length; i < length; i++) {
+        if(gjiniaOptions[i].checked) 
+        {
+            gjinia = gjiniaOptions[i].value;
+            break;
+        }
+    }
     
-  if( validateFields(emri, emriMbiemriRegex, emriError) === true){
-      alert("Form Submited")
-  }
+    var email = document.getElementById('input-email').value.trim();
+    var nrTelefonit = document.getElementById('input-nrTelefonit').value.trim();
+    var shtetesia = document.getElementById('input-shtetesia').value.trim();  
+
+    var emriHasError = !validateFields(emri, emriMbiemriRegex, emriError, emriMbiemriErrorMsg);
+    var mbiemriHasError = !validateFields(mbiemri, emriMbiemriRegex, mbiemriError, emriMbiemriErrorMsg);
+    var ditelindjaHasError = !validateFields(ditelindja, null, ditelindjaError, ditlindjaErrorMsg);
+    var gjiniaHasError = !validateFields(gjinia, null, gjiniaError, emriMbiemriErrorMsg);
+    var emailHasError = !validateFields(email, emailRegex, emailError, emailErrorMsg);
+    var nrTelefonitHasError = !validateFields(nrTelefonit, null, nrTelefonitError, nrTelefonitErrorMsg);
+    var shtetesiaHasError = !validateFields(shtetesia, null, shtetesiaError, shtetesiaErrorMsg);
+    
+    if(!emriHasError && !mbiemriHasError && !ditelindjaHasError && !gjiniaHasError && !emailHasError && !nrTelefonitHasError && !shtetesiaHasError ) {
+        alert("Sukses");
+    }
 });
