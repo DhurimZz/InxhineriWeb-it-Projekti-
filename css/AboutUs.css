@@ -65,7 +65,7 @@
     margin-right: 5%;
 }
 .FirstPicture1 {
-    background-image: url(./Fotot/doctorboy1.jpg);
+    background-image: url(../Fotot/doctorboy1.jpg);
     background-size: cover;
     display: block;
     position: relative;
@@ -76,7 +76,7 @@
     right: 75%;
 }
 .SecondPicture2 {
-    background-image: url(./Fotot/doctorgirl1.jpg);
+    background-image: url(../Fotot/doctorgirl1.jpg);
     background-size: cover;
     display: block;
     box-shadow: 0 0 40px 0 rgb(0 0 0 / 20%);

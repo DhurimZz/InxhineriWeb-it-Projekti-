@@ -154,7 +154,7 @@
 .container-left-photo {
     height: 150px;
     width: 450px;
-    background-image: url(./Fotot/Healthylifestyle1.jpeg);
+    background-image: url(../Fotot/Healthylifestyle1.jpeg);
     background-size: cover;
 }
 .container-right {
@@ -175,19 +175,19 @@
 .container-right-photo1 {
     height: 80px;
     width: 120px;
-    background-image: url(./Fotot/PhysycalActivity1.jpg);
+    background-image: url(../Fotot/PhysycalActivity1.jpg);
     background-size: cover;
 }
 .container-right-photo2 {
     height: 80px;
     width: 120px;
-    background-image: url(./Fotot/HealthyFood1.jpg);
+    background-image: url(../Fotot/HealthyFood1.jpg);
     background-size: cover;
 }
 .container-right-photo3 {
     height: 80px;
     width: 120px;
-    background-image: url(./Fotot/HealthySleep1.jpg);
+    background-image: url(../Fotot/HealthySleep1.jpg);
     background-size: cover;
 }
 .container-right-items-tekst {
@@ -259,7 +259,7 @@
 .container3-photo {
     width: 400px;
     height: 200px;
-    background-image: url(./Fotot/docotrinfosubbutton1.jpg);
+    background-image: url(../Fotot/docotrinfosubbutton1.jpg);
     background-size: cover;
     border-radius: 35px;
     box-shadow: 0 20px 20px -20px #000;
