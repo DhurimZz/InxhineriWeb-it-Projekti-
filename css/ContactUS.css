@@ -77,11 +77,13 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    border-right: 3px solid #ebebeb;
 }
 .content-adress {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 .content-phone {
     display: flex;
@@ -96,24 +98,96 @@
 .icon-adress {
    width: 35px;
    height: 35px;
+   cursor: crosshair;
+}
+.icon-adress:hover {
+    background-color: #ebebeb;
 }
 .icon-phone {
     width: 35px;
     height: 35px;
+    margin-top: 20px;
+    cursor: crosshair;
 }
+.icon-phone:hover {
+    background-color: #ebebeb;
+} 
 .icon-email {
     width: 35px;
     height: 35px;
+    margin-top: 20px;
+    cursor: crosshair;
+}
+.icon-email:hover {
+    background-color: #ebebeb;
 }
 .title {
     font-size: 18px;
     font-weight: 500;
+    cursor: s-resize;
 }
 .text1 {
     font-size: 14px;
     color: #afafb6;
+    cursor: text;
 }
 .text2 {
     font-size: 14px;
     color: #afafb6;
+    cursor: text;
+}
+.content-right-side {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content-right-side-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+}
+.content-right-side-text {
+    font-size: 14px;
+    color: #afafb6;
+}
+.input-box {
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    background: #ebebeb;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+    cursor: text;
+}
+.input-box-message-box {
+    min-height: 110px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 0 15px;
+    border: none;
+    background: #ebebeb;
+    border-radius: 6px;
+    padding-top: 10px;
+    cursor: text;
+}
+.button {
+    font-size: 18px;
+    padding: 8px 30px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ebebeb;
+    color: black;
 }
