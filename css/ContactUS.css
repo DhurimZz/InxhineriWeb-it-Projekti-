@@ -48,4 +48,72 @@
 .body {
     width: 100%;
     background: #ebebeb;
+    display: flex;
+    min-height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner {
+    width: 85%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.content-adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-adress {
+   width: 35px;
+   height: 35px;
+}
+.icon-phone {
+    width: 35px;
+    height: 35px;
+}
+.icon-email {
+    width: 35px;
+    height: 35px;
+}
+.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+.text1 {
+    font-size: 14px;
+    color: #afafb6;
+}
+.text2 {
+    font-size: 14px;
+    color: #afafb6;
 }
