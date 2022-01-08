@@ -43,9 +43,6 @@
     width: 20px;
     cursor: pointer;  
 }
-.logo-social-item:hover {
-    background-color: black;
-}
 .headconteiner {
     display: flex;
     justify-content: space-around;
@@ -110,7 +107,7 @@
 .TestAboutUsColor3 {
     margin-top: 3%;
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 .TextofAboutUs-Button {
     width: max-content;
