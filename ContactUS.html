@@ -58,23 +58,28 @@
                     <p class="content-right-side-text">Nëse keni një sygjerim, verejtje apo kritik për ne, apo ndonjë
                         lloj pyetjeje në lidhje me
                         Shëndetin, mund të dërgoni mesazhe nga këtu. Është kënaqësi t'ju ndihmojmë.</p>
-                    <form action="#">
+                    <form name="form" onsubmit="return validForm()">
                         <div>
-                            <input type="text" placeholder="Enter your name" class="input-box">
+                            <input type="text" placeholder="Enter your name" class="input-box" name="name" id="name">
+                            <div class="error-hint">Ju lutem shenoni emrin</div>
                         </div>
                         <div>
-                            <input type="text" placeholder="Enter your email" class="input-box">
+                            <input type="text" placeholder="Enter your email" class="input-box" name="email" id="email">
+                            <div class="error-hint">Email-i juaj është i pavlefshëm!</div>
                         </div>
                         <div>
                             <textarea placeholder="Enter your message" class="input-box-message-box"></textarea>
+                            <div class="error-hint">Ju lutemi plotësoni kutinë e tekstit!</div>
                         </div>
                         <div>
-                            <input type="button" value="Dërgo" class="button">
+                            <input type="submit" class="button">
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/ContactUS.js"></script>
+</body>
 
 </html>
