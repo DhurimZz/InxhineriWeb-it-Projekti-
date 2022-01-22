@@ -130,17 +130,6 @@
     text-decoration: none;
     color: white;
 }
-.banner-photo {
-    align-self: center;
-    width: 50%;
-}
-
-.banner-photo-item {
-    width: 100%;
-    box-shadow: 0 20px 20px -20px #000;
-
-    
-}
 .container {
     display: flex;
     align-items: center;
