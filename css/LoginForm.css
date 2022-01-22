@@ -73,3 +73,7 @@
 .loginform-button:hover {
     background-color:green ;
 }
+.error {
+    color: red;
+    font-size: small;
+}

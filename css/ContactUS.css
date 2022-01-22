@@ -42,9 +42,6 @@
     width: 20px;
     cursor: pointer;
 }
-.logo-social-item:hover {
-    background-color: black;
-}
 .body {
     width: 100%;
     background: #ebebeb;

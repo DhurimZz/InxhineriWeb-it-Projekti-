@@ -40,13 +40,15 @@ function validateFields(value, regex, errorDisplay, errorMsg) {
 
 
 registerForm.addEventListener("submit", function(e){ 
-    e.preventDefault()
-
     var emri = document.getElementById('input-emri').value.trim();
     var mbiemri = document.getElementById('input-mbiemri').value.trim();
     var ditelindja = document.getElementById('input-ditelindja').value.trim();
     var gjinia = "";
     var gjiniaOptions= document.getElementsByName('gjinia');
+    var email = document.getElementById('input-email').value.trim();
+    var nrTelefonit = document.getElementById('input-nrTelefonit').value.trim();
+    var shtetesia = document.getElementById('input-shtetesia').value.trim();  
+
     for(var i = 0, length = gjiniaOptions.length; i < length; i++) {
         if(gjiniaOptions[i].checked) 
         {
@@ -54,10 +56,6 @@ registerForm.addEventListener("submit", function(e){
             break;
         }
     }
-    
-    var email = document.getElementById('input-email').value.trim();
-    var nrTelefonit = document.getElementById('input-nrTelefonit').value.trim();
-    var shtetesia = document.getElementById('input-shtetesia').value.trim();  
 
     var emriHasError = !validateFields(emri, emriMbiemriRegex, emriError, emriMbiemriErrorMsg);
     var mbiemriHasError = !validateFields(mbiemri, emriMbiemriRegex, mbiemriError, emriMbiemriErrorMsg);
@@ -66,8 +64,10 @@ registerForm.addEventListener("submit", function(e){
     var emailHasError = !validateFields(email, emailRegex, emailError, emailErrorMsg);
     var nrTelefonitHasError = !validateFields(nrTelefonit, null, nrTelefonitError, nrTelefonitErrorMsg);
     var shtetesiaHasError = !validateFields(shtetesia, null, shtetesiaError, shtetesiaErrorMsg);
-    
-    if(!emriHasError && !mbiemriHasError && !ditelindjaHasError && !gjiniaHasError && !emailHasError && !nrTelefonitHasError && !shtetesiaHasError ) {
-        alert("Sukses");
+
+    console.log(`${emriHasError} || ${mbiemriHasError} || ${ditelindjaHasError} || ${gjiniaHasError} || ${emailHasError} || ${nrTelefonitHasError} || ${shtetesiaHasError} `)
+    if(emriHasError || mbiemriHasError || ditelindjaHasError || gjiniaHasError || emailHasError || nrTelefonitHasError || shtetesiaHasError ) {
+        e.preventDefault()
     }
-});
+    
+})

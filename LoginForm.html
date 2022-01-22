@@ -17,13 +17,15 @@
 <body>
 
     <div class="container">
-        <div class="container-loginform">
-            <div class="container-loginform-items">
+        <div class="container-loginform" id="login-form">
+                <form class="container-loginform-items">
                 <span class="loginform-title">ACCOUNT LOGIN</span>
                 <span class="loginform-usernamepassword">USERNAME</span>
-                <input type="text" class="loginform-input">
+                <input type="text" class="loginform-input" id="input-username">
+                <span id="usernameError" class="error"></span>
                 <span class="loginform-usernamepassword">PASSWORD</span>
-                <input type="password" class="loginform-input">
+                <input type="password" class="loginform-input" id="input-email">
+                <span id="emailError" class="error"></span>
                 <div class="loginform-checkbox">
                     <label> <input type="checkbox" > Remember me</label>
                     <span>Forgot Password?</span>
@@ -31,9 +33,10 @@
                 <div class="container-loginform-button">
                     <button class="loginform-button">Login</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
+    <script src="./js/LoginForm.js" ></script>
 </body>
 
 </html>
