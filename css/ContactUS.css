@@ -178,6 +178,7 @@
     font-size: 18px;
     padding: 8px 30px;
     border-radius: 6px;
+    margin-top: 10px;
     background-color: black;
     color: white;
     outline: none;
@@ -187,4 +188,11 @@
 .button:hover {
     background-color: #ebebeb;
     color: black;
+    transition: all 1s;
+}
+.error-hint {
+    font-size: 10px;
+    color: red;
+    margin-left: 10px;
+    display: none;
 }
