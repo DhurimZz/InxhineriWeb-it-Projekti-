@@ -1,0 +1,28 @@
+.slider-container {
+    width: 700px;
+    height: 350px;
+    background: url(../Fotot/covid19-img.jpg);
+    background-size: cover;
+    box-shadow: 5px 10px 13px #888888;
+    margin: 100px auto;
+    animation: slide 15s 0s infinite;
+
+    /* animation-duration: 25s;
+    animation-name: slide;
+    animation-delay: 0;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes slide {
+
+    25%{
+        background: url(../Fotot/Covid-19-Consumer.png);
+        background-size: cover;
+    }
+
+    50%{
+        background: url(../Fotot/blue-covid-19-1400x693_0.jpg);
+        background-size: cover;
+    }
+
+}
