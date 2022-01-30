@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShëndetiIM ContactUS</title>
-    <link rel="stylesheet" href="css/ContactUS.css">
+    <link rel="stylesheet" href="./public/css/contactUS.css">
 </head>
 
 <body>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <script src="./js/ContactUS.js"></script>
+    <script src="./public/js/contactUS.js"></script>
 </body>
 
 </html>

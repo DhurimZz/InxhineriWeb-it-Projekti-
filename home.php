@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shëndeti Im</title>
-    <link rel="stylesheet" href="./css/Home.css">
-    <link rel="stylesheet" href="./css/Slider.css">
+    <link rel="stylesheet" href="./public/css/home.css">
+    <link rel="stylesheet" href="./public/css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -27,10 +27,10 @@
                 <div class="pagename">ShëndetiIM</div>
             </div>
             <ul class="logo-social" type="none">
-                <li><img src="./Fotot/facebook.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/instagram.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/pinterest.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/twitter.png" class="logo-social-item"></li>
+                <li><img src="./public/Fotot/facebook.png" class="logo-social-item"></li>
+                <li><img src="./public/Fotot/instagram.png" class="logo-social-item"></li>
+                <li><img src="./public/Fotot/pinterest.png" class="logo-social-item"></li>
+                <li><img src="./public/Fotot/twitter.png" class="logo-social-item"></li>
             </ul>
         </header>
     </div>
@@ -138,8 +138,8 @@
                         maskës, distancimin fizik dhe higjienën personale.</p>
                 </div>
                 <div class="container2-video">
-                    <video controls class="container2-video-item" poster="./Fotot/original.jpg">
-                        <source src="./Video/Coronavirus_ Good Hygiene Starts Here.mp4">
+                    <video controls class="container2-video-item" poster="./public/Fotot/original.jpg">
+                        <source src="./public/Video/Coronavirus_ Good Hygiene Starts Here.mp4">
                     </video>
                 </div>
             </div>
@@ -199,11 +199,11 @@
                 <div class="footer-items">
                     <h3 class="footer-items-title">SëndetiIM</h3>
                     <ul type="none">
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="Home.html">HOME</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="AboutUs.html">ABOUT US</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="ContactUS.html">CONTACT US</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="LoginForm.html">LOGIN</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="RegisterForm.html">REGISTER</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="home.html">HOME</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.html">ABOUT US</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="contactUS.html">CONTACT US</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="loginForm.html">LOGIN</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="registerForm.html">REGISTER</a></li>
                     </ul>
                 </div>
             </div>
