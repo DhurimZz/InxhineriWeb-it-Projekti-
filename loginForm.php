@@ -24,8 +24,8 @@
                 <input type="text" class="loginform-input" id="input-username">
                 <span id="usernameError" class="error"></span>
                 <span class="loginform-usernamepassword">PASSWORD</span>
-                <input type="password" class="loginform-input" id="input-email">
-                <span id="emailError" class="error"></span>
+                <input type="password" class="loginform-input" id="input-emri">
+                <span id="emriError" class="error"></span>
                 <div class="loginform-checkbox">
                     <label> <input type="checkbox" > Remember me</label>
                     <span>Forgot Password?</span>

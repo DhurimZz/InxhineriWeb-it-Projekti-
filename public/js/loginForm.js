@@ -1,7 +1,7 @@
 var loginForm = document.getElementById('login-form');
 
 var emriIPerdoruesittError = document.getElementById('usernameError');
-var emailError = document.getElementById('emailError');
+var emriError = document.getElementById('emriError');
 
 
 function validateField(value, error) {
@@ -17,15 +17,15 @@ function validateField(value, error) {
 loginForm.addEventListener("submit", function(e) 
 {
     var emriIPerdoruesit = document.getElementById("input-username").value;
-    var email = document.getElementById("input-email").value;
+    var emri = document.getElementById("input-emri").value;
 
     var emriIPerdoruesitHasError = !validateField(emriIPerdoruesit, emriIPerdoruesittError);
-    var emailHasError = !validateField(email, emailError);
+    var emriHasError = !validateField(emri,emriError);
 
-    if(!emriIPerdoruesitHasError && !emailHasError) {
+    if(!emriIPerdoruesitHasError && !emriHasError) {
         alert('Sukses');
     }
-    if(emriIPerdoruesitHasError || emailHasError ) {
+    if(emriIPerdoruesitHasError ||emriHasError ) {
         e.preventDefault();
     }
 })
