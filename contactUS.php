@@ -35,19 +35,19 @@
                 <div class="content-left-side">
                     <div class="title"><b>ContactUS</b></div>
                     <div class="content-adress">
-                        <img src="./Fotot/icons8-address-50.png" class="icon-adress">
+                        <div class="icon-adress"></div>
                         <div class="title">Adresa</div>
                         <div class="text1">UBT</div>
                         <div class="text2">Dega Ferizaj</div>
                     </div>
                     <div class="content-phone">
-                        <img src="./Fotot/icons8-phone-30.png" class="icon-phone">
+                        <div class="icon-phone"></div>
                         <div class="title">Nr.Telefonit</div>
                         <div class="text1">+38345472620</div>
                         <div class="text2">+38349924052</div>
                     </div>
                     <div class="content-email">
-                        <img src="./Fotot/icons8-mail-50.png" class="icon-email">
+                        <div class="icon-email"></div>
                         <div class="title">Email</div>
                         <div class="text1">al55544@ubt-uni.net</div>
                         <div class="text2">dz52352@ubt-uni.net</div>
@@ -58,21 +58,21 @@
                     <p class="content-right-side-text">Nëse keni një sygjerim, verejtje apo kritik për ne, apo ndonjë
                         lloj pyetjeje në lidhje me
                         Shëndetin, mund të dërgoni mesazhe nga këtu. Është kënaqësi t'ju ndihmojmë.</p>
-                    <form name="form" onsubmit="return validForm()">
-                        <div>
-                            <input type="text" placeholder="Enter your name" class="input-box" name="name" id="name">
-                            <div class="error-hint">Ju lutem shenoni emrin</div>
+                    <form name="contact-form">
+                        <div class="form-control">
+                            <input name="name" placeholder="Enter your name" class="input-box">
+                            <div class="error hide">Ju lutem shenoni emrin</div>
+                        </div>
+                        <div class="form-control">
+                            <input name="email" placeholder="Enter your email" class="input-box">
+                            <div class="error hide">Email-i juaj është i pavlefshëm!</div>
+                        </div>
+                        <div class="form-control">
+                            <textarea name="message" placeholder="Enter your message" class="input-box-message-box"></textarea>
+                            <div class="error hide">Ju lutemi plotësoni kutinë e tekstit!</div>
                         </div>
                         <div>
-                            <input type="text" placeholder="Enter your email" class="input-box" name="email" id="email">
-                            <div class="error-hint">Email-i juaj është i pavlefshëm!</div>
-                        </div>
-                        <div>
-                            <textarea placeholder="Enter your message" class="input-box-message-box"></textarea>
-                            <div class="error-hint">Ju lutemi plotësoni kutinë e tekstit!</div>
-                        </div>
-                        <div>
-                            <input type="submit" class="button">
+                            <button type="submit" class="button"> Dërgo </button>
                         </div>
                     </form>
                 </div>
