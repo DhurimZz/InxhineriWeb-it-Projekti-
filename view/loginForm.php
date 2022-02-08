@@ -19,11 +19,11 @@
     <div class="container">
         <div class="container-loginform" id="login-form">
                 <form class="container-loginform-items">
-                <span class="loginform-title">ACCOUNT LOGIN</span>
-                <span class="loginform-usernamepassword">USERNAME</span>
+                <span class="loginform-title">KYÇU</span>
+                <span class="loginform-usernamepassword">EMAIL</span>
                 <input type="text" class="loginform-input" id="input-username">
                 <span id="usernameError" class="error"></span>
-                <span class="loginform-usernamepassword">PASSWORD</span>
+                <span class="loginform-usernamepassword">FJALKALIMI</span>
                 <input type="password" class="loginform-input" id="input-password">
                 <span id="passwordError" class="error"></span>
                 <div class="loginform-checkbox">

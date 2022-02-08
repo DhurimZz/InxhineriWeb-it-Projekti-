@@ -20,12 +20,13 @@
     $surename_error = '';
     $birthyear_error = '';
     $gender_error = '';
-    $number_error = '';
+    $password_error = '';
     $country_error = '';
     $email_error = '';
 
     
-    if( $_POST ){
+    if( isset($_POST['registerForm'])){
+
         if( empty( $_POST['email']  ) ){
             $email_error = 'Ploteso Email!';
         }
@@ -42,8 +43,8 @@
             $gender_error = 'Ploteso Gjinin!';
         }
   
-        if( empty( $_POST['number']  ) ){
-            $number_error = 'Ploteso Numrin e Telefonit!';
+        if( empty( $_POST['password']  ) ){
+            $password_error = 'Ploteso Fjalkalimin!';
         }
    
         if( empty( $_POST['country']  ) ){
@@ -61,7 +62,7 @@
 
     <div class="container">
         <div class="container-registerform">
-            <form id="register-form" class="container-registerform-items" method="post">
+            <form id="register-form"  class="container-registerform-items" method="post" name="registerForm">
                 <span class="registerform-title">Regjistrimi </span>
                 <div class="container-items-space">
                     <div class="row-space">
@@ -87,11 +88,11 @@
                             <label class="registerform-input-gander">
                                 <input id="input-gjinia" type="radio"
                                     class="registerform-input-gandermale" <?php echo  $_POST && $gender_error === '' && $_POST["gjinia"] === "m" ? "checked" :"";?> name="gjinia" value="m" >
-                                     Male
+                                     Mashkullore
                             </label>
                             <label>
                                 <input id="input-gjinia" type="radio" class="registerform-input-ganderfemale"  <?php echo  $_POST && $gender_error === '' && $_POST["gjinia"] === "f" ? "checked" :"";?> name="gjinia" value="f">
-                                Female
+                                Femërore
                             </label>
                         </div>
                         <span id="error-gjinia" class="error"><?php echo $gender_error;?></span>
@@ -99,14 +100,14 @@
                 </div>
                 <div class="container-items-space">
                     <div class="row-space">
-                        <label class="registerform-data">Email</label><br><br>
+                        <label for= "input-email" class="registerform-data">Email</label><br><br>
                         <input id="input-email" type="email" class="registerform-input" name="email" value="<?php  echo  $email_error == '' &&  $_POST ? $_POST['email'] : '';?>">
                         <span id="error-email" class="error"><?php echo $email_error; ?></span>
                     </div>
                     <div class="row-space">
-                        <label class="registerform-data">Numri Telefonit</label><br><br>
-                        <input id="input-nrTelefonit" type="text" class="registerform-input" name="number" value="<?php  echo  $number_error == '' &&  $_POST ? $_POST['number'] : '';?>">
-                        <span id="error-nrTelefonit" class="error"><?php echo $number_error;?></span>
+                        <label for= "input-fjalkalimi" class="registerform-data">Fjalkalimi</label><br><br>
+                        <input id="input-fjalkalimi" type="password" class="registerform-input" name="password">
+                        <span id="error-fjalkalimi" class="error"><?php echo $password_error;?></span>
                     </div>
                 </div>
                 <div class="container-registerform-citizenship">

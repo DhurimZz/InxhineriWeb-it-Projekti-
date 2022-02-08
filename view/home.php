@@ -139,7 +139,7 @@
                 </div>
                 <div class="container2-video">
                     <video controls class="container2-video-item" poster="./public/Fotot/original.jpg">
-                        <source src="./public/Video/Coronavirus_ Good Hygiene Starts Here.mp4">
+                        <source src="./public/videos/Coronavirus_Good Hygiene Starts Here.mp4" >
                     </video>
                 </div>
             </div>
@@ -197,13 +197,13 @@
                     </ul>
                 </div>
                 <div class="footer-items">
-                    <h3 class="footer-items-title">SëndetiIM</h3>
+                    <h3 class="footer-items-title">ShëndetiIM</h3>
                     <ul type="none">
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="home.html">HOME</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.html">ABOUT US</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="contactUS.html">CONTACT US</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="loginForm.html">LOGIN</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="registerForm.html">REGISTER</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="registerForm.php">REGJISTROHU</a></li>
                     </ul>
                 </div>
             </div>

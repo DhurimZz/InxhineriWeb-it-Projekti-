@@ -48,7 +48,7 @@
                         E krijuar nga 2 student te Shkencave Kompjuterike me një te kaluar nga shkolla e mesme e
                         mjekësisë.</p>
                     <p class="TestAboutUsColor3">Arbnor Lama & Dhurim Zenuni</p>
-                    <button class="TextofAboutUs-Button"><a href="Home.html"
+                    <button class="TextofAboutUs-Button"><a href="Home.php"
                                 class="TextofAboutUs-Button-link">Kthehu Tek Faqja Kryesore</a></button>
                 </div>
             </div>

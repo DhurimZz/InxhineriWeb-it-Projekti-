@@ -2,13 +2,13 @@ var registerForm = document.getElementById('register-form');
 
 var emriMbiemriRegex = /^[a-zA-Z ]{2,30}$/;
 var emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-var numberRegex = /^\d+$/;;
+var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
 var emriMbiemriErrorMsg = "Gabim emri" ;
 var ditlindjaErrorMsg = "Gabim ditlindja" ;
 var gjiniaErrorMsg = "" ;
 var emailErrorMsg = "Gabim email" ;
-var nrTelefonitErrorMsg= "Gabim nrTelefoinit" ;
+var fjalkalimiErrorMsg= "Gabim fjalkalimi(së paku 8 karaktere dhe 1 numer)" ;
 var shtetesiaErrorMsg = "Gabim shtetesia" ;
 
 
@@ -18,7 +18,7 @@ var mbiemriError = document.getElementById('error-mbiemri');
 var ditelindjaError = document.getElementById('error-ditelindja');
 var gjiniaError = document.getElementById('error-gjinia');
 var emailError = document.getElementById('error-email');
-var nrTelefonitError = document.getElementById('error-nrTelefonit');
+var fjalkalimiError = document.getElementById('error-fjalkalimi');
 var shtetesiaError = document.getElementById('error-shtetesia');
 var errorGeneral = document.getElementById('error-general');
 
@@ -46,7 +46,7 @@ registerForm.addEventListener("submit", function(e){
     var gjinia = "";
     var gjiniaOptions= document.getElementsByName('gjinia');
     var email = document.getElementById('input-email').value.trim();
-    var nrTelefonit = document.getElementById('input-nrTelefonit').value.trim();
+    var fjalkalimi = document.getElementById('input-fjalkalimi').value.trim();
     var shtetesia = document.getElementById('input-shtetesia').value.trim();  
 
     for(var i = 0, length = gjiniaOptions.length; i < length; i++) {
@@ -62,11 +62,11 @@ registerForm.addEventListener("submit", function(e){
     var ditelindjaHasError = !validateFields(ditelindja, null, ditelindjaError, ditlindjaErrorMsg);
     var gjiniaHasError = !validateFields(gjinia, null, gjiniaError, emriMbiemriErrorMsg);
     var emailHasError = !validateFields(email, emailRegex, emailError, emailErrorMsg);
-    var nrTelefonitHasError = !validateFields(nrTelefonit, null, nrTelefonitError, nrTelefonitErrorMsg);
+    var fjalkalimiHasError = !validateFields(fjalkalimi, passwordRegex, fjalkalimiError, fjalkalimiErrorMsg);
     var shtetesiaHasError = !validateFields(shtetesia, null, shtetesiaError, shtetesiaErrorMsg);
 
-    console.log(`${emriHasError} || ${mbiemriHasError} || ${ditelindjaHasError} || ${gjiniaHasError} || ${emailHasError} || ${nrTelefonitHasError} || ${shtetesiaHasError} `)
-    if(emriHasError || mbiemriHasError || ditelindjaHasError || gjiniaHasError || emailHasError || nrTelefonitHasError || shtetesiaHasError ) {
+    console.log(`${emriHasError} || ${mbiemriHasError} || ${ditelindjaHasError} || ${gjiniaHasError} || ${emailHasError} || ${fjalkalimiHasError} || ${shtetesiaHasError} `)
+    if(emriHasError || mbiemriHasError || ditelindjaHasError || gjiniaHasError || emailHasError || fjalkalimiHasError || shtetesiaHasError ) {
         e.preventDefault()
     }
     
