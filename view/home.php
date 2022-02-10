@@ -32,6 +32,12 @@ if(!isset($_SESSION['email'])) {
                 </div>
                 <div class="pagename">ShëndetiIM</div>
             </div>
+            <ul type="none" class="navigation">
+                <li class="navigation-item"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+        </ul>
             <ul class="logo-social" type="none">
                 <li><img src="./public/Fotot/facebook.png" class="logo-social-item"></li>
                 <li><img src="./public/Fotot/instagram.png" class="logo-social-item"></li>
@@ -209,6 +215,7 @@ if(!isset($_SESSION['email'])) {
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="logout.php">ÇKYQU</a></li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="registerForm.php">REGJISTROHU</a></li>
                     </ul>
                 </div>

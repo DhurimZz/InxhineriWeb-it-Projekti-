@@ -20,6 +20,12 @@
                 </div>
                 <div class="pagename">ShëndetiIM</div>
             </div>
+            <ul type="none" class="navigation">
+                <li class="navigation-item"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+            </ul>
             <ul class="logo-social" type="none">
                 <li><img src="./Fotot/facebook.png" class="logo-social-item"></li>
                 <li><img src="./Fotot/instagram.png" class="logo-social-item"></li>
