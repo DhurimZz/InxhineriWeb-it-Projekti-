@@ -62,7 +62,7 @@
 
     <div class="container">
         <div class="container-registerform">
-            <form id="register-form"  class="container-registerform-items" method="post" name="registerForm">
+            <form id="register-form"  class="container-registerform-items" action="registerForm.php" method="post" >
                 <span class="registerform-title">Regjistrimi </span>
                 <div class="container-items-space">
                     <div class="row-space">
@@ -119,12 +119,14 @@
                     <span id="error-shtetesia" class="error"><?php echo $country_error;?></span>
                 </div>
                 <div class="container-registerform-button">
-                    <button class="registerform-button">Regjistrohu</button>
+                    <input type="submit" class="registerform-button" name="registerForm" value="Regjistrohu">
                 </div>
                 <span id="error-general" class="error"></span>
+
             </form>
         </div>
     </div>
+    <?php require_once '../controller/registerController.php'; ?>
     <script src="./public/js/registerForm.js"></script>
 </body>
 

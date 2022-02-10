@@ -4,7 +4,7 @@
         private  $server = "localhost";
         private  $username = "root";
         private  $password = "password";
-        private  $database = "InxhineriWeb-it-Projekti";
+        private  $database = "inxhineriWeb-it-projekti";
 
         function startConnection() {
             $conn=  mysqli_connect($this->server, $this->username, $this->password,  $this->database);

@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION['email'])) {
+    echo '<script> location.replace("http://localhost/InxhineriWeb-it-Projekti-/view/loginForm.php"); </script>';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

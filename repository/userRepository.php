@@ -1,6 +1,7 @@
 <?php
 include_once '../database/databaseConnection.php';
 
+
 class UserRepository {
     private $connection;
 
@@ -20,12 +21,12 @@ class UserRepository {
         $password = $user->getPassword();
         $country = $user->getCountry();
 
-        $sql = "INSERT INTO user1 VALUES('$id','$name', '$surname',' $birthyear','$gender','$email','$password','$country')";
+        $sql = "INSERT INTO user VALUES('$id','$name', '$surname',' $birthyear','$gender','$email','$password','$country')";
         if(mysqli_query($conn,$sql)){
-            echo "query is executed succesfuly";
-            header("location:../view/login.php");
+            // echo "query is executed succesfuly";
+            echo '<script> location.replace("http://localhost/InxhineriWeb-it-Projekti-/view/loginForm.php"); </script>';
         }else {
-            echo "This is an Error: ".mysqli_error($conn);
+            echo "This is an Error:".mysqli_error($conn);
         }
     }
 
