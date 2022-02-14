@@ -6,7 +6,7 @@
 }
 
 .mb-30px {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .container {
@@ -17,20 +17,20 @@
     background-color: #ebebeb;
 }
 .container-registerform {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
     background:#fff;
-    width: 680px;
-    padding: 57px 65px;
-    padding-bottom: 65px;
+    width: 42.5rem;
+    padding: 3.563rem 4.063rem;
+    padding-bottom: 4.063rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     
 }
 .registerform-title {
-    margin-bottom: 30px;
-    font-size: xx-large;
+    margin-bottom: 1.875rem;
+    font-size: 2rem;
 }
 .container-registerform-items {
     width: 100%;
@@ -42,41 +42,42 @@
 }
 .row-space {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .registerform-input-gander {
-    margin-right: 50px;
+    margin-right: 3.125rem;
 }
 .registerform-input {
-    width: 250px;
-    height: 50px;
-    padding: 0 20px;
+    width: 15.625rem;
+    height: 3.125rem;
+    padding: 0 1.25rem;
     border-radius: 5px;
     border: 1px solid gray;
-    font-size: larger;
+    font-size: 1.2rem;
 }
 .container-registerform-citizenship {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     width: 100%;
 }
 .registerform-citizenship
 {
-    margin-top: 10px;
-    width: 527px;
-    height: 50px;
-    padding: 0 20px;
+    margin-top: 0.625rem;
+    width: 32.938rem;
+    height: 3.125rem;
+    padding: 0 1.25rem;
     border-radius: 5px;
     border: 1px solid gray;
-    font-size: larger;
+
+    font-size: 1.2rem;
 }
 .container-registerform-button {
-    margin-top: 5%;
+    margin-top: 3rem;
 }
 .registerform-button {
-    width: 150px;
+    width: 9.375rem;
     padding: 15px;
     border-radius: 27px;
-    font-size: larger;
+    font-size: 1.2rem;
     cursor: pointer;
     background-color: #333;
     color: white;
@@ -89,6 +90,25 @@
     background-color:green ;
 }
 .error {
-    font-size: small;
+    font-size: 0.8rem;
     color: red;
+}
+/* Desktop small */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 0.75rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 0.6rem;
+    }
+    
+   
 }

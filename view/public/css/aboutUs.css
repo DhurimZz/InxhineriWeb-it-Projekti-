@@ -4,74 +4,31 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 .content-center{
-    max-width: 1400px;
+    max-width: 87.5rem;
     margin: auto;
     height: 100%;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
-.icon-menu-item
-{
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 6px 0;
-  border-radius: 6px;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-}
-.pagename {
-    margin-left: 10px;
-    font-size: 35px;    
-}
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.navigation-item{
-    display: flex;
-    justify-content: center;
-    width: 130px;
-    font-size: 15px;
-    cursor: pointer;
-}
-.logo-social {
-    display: flex;
-    width: 8%;
-    justify-content: space-between;
-}
-.wrapper-icon-pagename {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-.logo-social-item {
-    width: 20px;
-    cursor: pointer;  
-}
+
 .headconteiner {
     display: flex;
     justify-content: space-around;
-    height: 900px
+    height: 56.25rem;
 }
 .colorcontainer1 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 575px;
+    height:35.938rem;
     background-color:  #a9c2da;
 }
 .conteinerwrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 2%;
-    margin-right: 5%;
+    margin-top: 2.2rem;
+    margin-right: 5rem;
 }
 .FirstPicture1 {
     background-image: url(../Fotot/doctorboy1.jpg);
@@ -79,9 +36,9 @@
     display: block;
     position: relative;
     box-shadow: 0 0 40px 0 rgb(0 0 0 / 20%);
-    width: 430px;
-    height: 640px;
-    margin-top: 5%;
+    width: 26.875rem;
+    height: 40rem;
+    margin-top:1.8rem;
     right: 75%;
 }
 .SecondPicture2 {
@@ -89,19 +46,19 @@
     background-size: cover;
     display: block;
     box-shadow: 0 0 40px 0 rgb(0 0 0 / 20%);
-    width: 380px;
-    height: 510px;
-    margin-top: 20%;
+    width: 23.75rem;
+    height: 31.875rem;
+    margin-top: 22rem;
     position: absolute;
 }
 .TextofAboutUs {
-    width: 500px;
-    height: 400px;
+    width: 31.25rem;
+    height: 25rem;
     background-color: #4d5a65;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin-top: 5%;
+    margin-top: 5.5rem;
     position: absolute;
     top: 10%;
     left: 55%;
@@ -112,23 +69,23 @@
     font-size: 3rem;
 }
 .TestAboutUsColor2 {
-    margin-top: 7%;
+    margin-top: 1rem;
     color: white;
     font-size: 1rem;
 }
 .TestAboutUsColor3 {
-    margin-top: 3%;
+    margin-top: 1rem;
     color: white;
     font-size: 0.8rem;
 }
 .TextofAboutUs-Button {
     width: max-content;
-    margin-top: 10%;
+    margin-top: 3rem;
     color: white;
     background-color: #4d5a65;
     padding: 0.5rem;
     border: solid white 2px;
-    font-size: larger;
+    font-size: 1.2rem;
     cursor: pointer;
     display: flex;
 }
@@ -148,16 +105,38 @@
     justify-content: space-between;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    margin-bottom: 3%;
+    margin-bottom: 1rem;
 }
 .footer-items-title {
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 .footer-items-txt {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 .foter-item-txt-link {
     text-decoration: none;
     color: black;
 }
+
+
+/* Desktop small */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 0.75rem;
+    }
+
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 0.6rem;
+    }
+}
+
+

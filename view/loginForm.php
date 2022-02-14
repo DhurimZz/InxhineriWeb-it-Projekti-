@@ -29,28 +29,37 @@
     $emailPasswordError='';
 
     $chF = new CheckFields;
-
+    
     if(isset($_POST['loginbtn'])) {
         if(empty($_POST['email']) || empty($_POST['password'])){
-            echo "<p style='color:red;'> *Fill all fields.</p>";
+            echo "";
         }else{
             $email = $_POST['email'];
             $password = $_POST['password'];
-            if($chF->check_email($email) && $chF->check_password($password)){ 
+            if($chF->check_email($email) && $chF->check_password($password) && $chF->get_role($email) === 'user'){ 
                 $_SESSION['email'] = $email; 
+                $_SESSION['user'] = 'user';
                 echo '<script> location.replace("http://localhost/InxhineriWeb-it-Projekti-/view/home.php"); </script>';
-            }else{
+            }else if($chF->check_email($email) && $chF->check_password($password) && $chF->get_role($email) === 'admin'){
+                $_SESSION['email'] = $email; 
+                $_SESSION['admin'] = 'admin';
+                echo '<script> location.replace("http://localhost/InxhineriWeb-it-Projekti-/view/admin/posts.php"); </script>';
+
+            }
+            else{
                 $emailPasswordError='Email ose fjalkalimi jan gabim!!';
+                
             }
         }
     }
 
 ?>
+
 <body>
 
     <div class="container">
         <div class="container-loginform" id="login-form">
-                <form class="container-loginform-items" action="loginForm.php" method="post">
+            <form class="container-loginform-items" action="loginForm.php" method="post">
                 <span class="loginform-title">KYÇU</span>
                 <span class="loginform-emailpassword">EMAIL</span>
                 <input type="text" class="loginform-input" id="input-email" name="email">
@@ -59,7 +68,7 @@
                 <input type="password" class="loginform-input" id="input-password" name="password">
                 <span id="passwordError" class="error"><?php echo $emailPasswordError;?></span>
                 <div class="loginform-checkbox">
-                    <label> <input type="checkbox" > Remember me</label>
+                    <label> <input type="checkbox"> Remember me</label>
                     <span>Forgot Password?</span>
                 </div>
                 <div class="container-loginform-button">
@@ -68,8 +77,8 @@
             </form>
         </div>
     </div>
-  
-    <script src="./public/js/loginForm.js" ></script>
+
+    <script src="./public/js/loginForm.js"></script>
 </body>
 
 </html>

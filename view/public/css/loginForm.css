@@ -13,13 +13,13 @@
 }
 .container-loginform {
     background:#fff;
-    width: 560px;
-    height: 560px;
-    padding-right: 85px;
-    padding-left: 85px;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    border-radius: 10px;
+    width: 35rem;
+    height: 35rem;
+    padding-right: 5.313rem;
+    padding-left: 5.313rem;
+    padding-top: 3.438rem;
+    padding-bottom: 3.438rem;
+    border-radius: 0.625rem;
     display: flex;
     align-items: center;
     
@@ -30,38 +30,38 @@
     flex-direction: column;
 }
 .loginform-title {
-    font-size: xx-large;
+    font-size: 2rem;
     
 }
 .loginform-input {
     width: 100%;
-    height: 55px;
-    font-size: 18px;
-    padding: 0 25px;
+    height: 3.438rem;
+    font-size: 1.125rem;
+    padding: 0 1.563rem;
     
 }
 .loginform-emailpassword {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: small;
+    margin-top: 1.875rem;
+    margin-bottom: 0.313rem;
+    font-size: 0.8rem;
 
 }
 .loginform-checkbox {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    font-size: small;
+    font-size: 0.8rem;
     color: grey;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .container-loginform-button {
-    margin-top: 10%;
+    margin-top: 4rem;
 }
 .loginform-button {
-    width: 150px;
-    padding: 15px;
+    width: 9.375rem;
+    padding: 0.938rem;
     border-radius: 27px;
-    font-size: larger;
+    font-size: 1.2rem;
     cursor: pointer;
     background-color: #333;
     color: white;
@@ -75,5 +75,27 @@
 }
 .error {
     color: red;
-    font-size: small;
+    font-size: 0.8rem;
 }
+/* Desktop small */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 0.75rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 0.6rem;
+    }
+    .loginform-input {
+        height: 2.6rem;
+    }
+}
+
+

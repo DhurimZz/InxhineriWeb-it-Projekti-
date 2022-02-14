@@ -9,6 +9,7 @@
     $email = "";
     $password = "";
     $country = "";
+    
    
     if(isset($_POST['registerForm'])){
         if(empty($_POST['name']) || empty($_POST['surename']) || empty($_POST['birthyear']) 
@@ -22,9 +23,10 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
             $country = $_POST['country'];
-            $id= rand(100, 999).$name;
+            $id = rand(100, 999).$name;
+            $role = "user"; 
 
-            $user = new User($id, $name, $surname, $birthyear, $gender,$email, $password,$country);
+            $user = new User($id, $name, $surname, $birthyear, $gender,$email, $password,$country,$role);
 
             $userRepository= new UserRepository();
             $userRepository->insertUser($user);
@@ -33,3 +35,4 @@
         
 
     }
+    ?>

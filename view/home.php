@@ -12,6 +12,7 @@ if(!isset($_SESSION['email'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shëndeti Im</title>
+    <link rel="stylesheet" href="./public/css/header.css">
     <link rel="stylesheet" href="./public/css/home.css">
     <link rel="stylesheet" href="./public/css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,31 +22,47 @@ if(!isset($_SESSION['email'])) {
 </head>
 
 <body>
-
-    <div class="content-center">
-        <header class="header">
-            <div class="wrapper-icon-pagename">
-                <div class="icon-menu">
-                    <div class="icon-menu-item"></div>
-                    <div class="icon-menu-item"></div>
-                    <div class="icon-menu-item"></div>
+    <header class="header">
+        <div class="content-center">
+            <div class="header-wrapper">
+                <div class="wrapper-icon-pagename">
+                    <div class="icon-menu js-toggle-nav">
+                        <div class="icon-menu-item"></div>
+                        <div class="icon-menu-item"></div>
+                        <div class="icon-menu-item"></div>
+                    </div>
+                    <div class="pagename">ShëndetiIM</div>
                 </div>
-                <div class="pagename">ShëndetiIM</div>
+                <ul type="none" class="navigation">
+                    <li class="navigation-item"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                    <li class="navigation-item"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                    <li class="navigation-item"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a>
+                    </li>
+                    <li class="navigation-item"><a class="foter-item-txt-link" href="news.php">TE REJAT</a></li>
+                </ul>
+                <ul class="logo-social" type="none">
+                    <li><img src="./public/Fotot/facebook.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/instagram.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/pinterest.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/twitter.png" class="logo-social-item"></li>
+                </ul>
             </div>
-            <ul type="none" class="navigation">
-                <li class="navigation-item"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
-                <li class="navigation-item"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
-                <li class="navigation-item"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
-                <li class="navigation-item"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
-        </ul>
-            <ul class="logo-social" type="none">
-                <li><img src="./public/Fotot/facebook.png" class="logo-social-item"></li>
-                <li><img src="./public/Fotot/instagram.png" class="logo-social-item"></li>
-                <li><img src="./public/Fotot/pinterest.png" class="logo-social-item"></li>
-                <li><img src="./public/Fotot/twitter.png" class="logo-social-item"></li>
+        </div>
+    </header>
+    <aside class="aside-navigation js-sidenav">
+        <div class="aside-navigation-bg js-nav-bg"></div>
+        <div class="aside-navigation-main">
+            <ul type="none" class="aside-navigation-list">
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a>
+                </li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="news.php">TE REJAT</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="logout.php">ÇKYQU</a></li>
             </ul>
-        </header>
-    </div>
+        </div>
+    </aside>
     <hr>
     <div class="banner vh-60">
         <div class="content-center">
@@ -69,8 +86,8 @@ if(!isset($_SESSION['email'])) {
                 </div>
             </div>
         </div>
-        </div>
-    
+    </div>
+
     <div class="content-center">
         <div class="container pv-40px vh-60">
             <div class="container-left">
@@ -151,7 +168,7 @@ if(!isset($_SESSION['email'])) {
                 </div>
                 <div class="container2-video">
                     <video controls class="container2-video-item" poster="./public/Fotot/original.jpg">
-                        <source src="./public/videos/Coronavirus_Good Hygiene Starts Here.mp4" >
+                        <source src="./public/videos/Coronavirus_Good Hygiene Starts Here.mp4">
                     </video>
                 </div>
             </div>
@@ -212,17 +229,20 @@ if(!isset($_SESSION['email'])) {
                     <h3 class="footer-items-title">ShëndetiIM</h3>
                     <ul type="none">
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a>
+                        </li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="news.php">TE REJAT</a></li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
                         <li class="footer-items-txt"><a class="foter-item-txt-link" href="logout.php">ÇKYQU</a></li>
-                        <li class="footer-items-txt"><a class="foter-item-txt-link" href="registerForm.php">REGJISTROHU</a></li>
+                        <li class="footer-items-txt"><a class="foter-item-txt-link"
+                                href="registerForm.php">REGJISTROHU</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/Slider.js" ></script>
+    <script src="./public/js/sidenav.js"></script>
 </body>
 
 </html>

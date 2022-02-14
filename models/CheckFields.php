@@ -1,9 +1,6 @@
 <?php 
     include_once '../database/databaseConnection.php';
     class CheckFields{
-
-        
-
         function check_email($email){
             $dbC = new DatabaseConnection;
             $conn = $dbC->startConnection();
@@ -32,5 +29,18 @@
                 return false;
             }
         }
+        function get_role($email){
+            $dbC = new DatabaseConnection;
+            $conn = $dbC->startConnection();
+            $select_role = "SELECT role FROM user where email = '$email'";
+            $result = mysqli_query($conn, $select_role);
+            $row = mysqli_fetch_row($result);
+            return $row[0];
+        }
+        
     }
+  
+        
+      
 ?>
+  

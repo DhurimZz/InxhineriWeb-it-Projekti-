@@ -1,10 +1,10 @@
 .slider-container {
-    width: 700px;
-    height: 350px;
+    width: 43.75rem;
+    height: 21.875rem;
     background: url(../Fotot/covid19-img.jpg);
     background-size: cover;
-    box-shadow: 5px 10px 13px #888888;
-    margin: 100px auto;
+    box-shadow: 0.313rem 0.625rem 0.813rem #888888;
+    margin: 6.25rem auto;
     animation: slide 15s 0s infinite;
 
     /* animation-duration: 25s;
@@ -25,4 +25,18 @@
         background-size: cover;
     }
 
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .slider-container{
+        width: 50rem;
+        height: 14.875rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .slider-container{
+        width: 45rem;
+        height: 10.875rem;
+    }
 }

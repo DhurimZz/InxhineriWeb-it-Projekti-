@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShëndetiIM ContactUS</title>
     <link rel="stylesheet" href="./public/css/contactUS.css">
+    <link rel="stylesheet" href="./public/css/header.css">
 </head>
 
 <body>
-    <div class="content-center">
-        <header class="header">
+    <header class="header">
+            <div class="content-center">
+            <div class="header-wrapper">
             <div class="wrapper-icon-pagename">
-                <div class="icon-menu">
+                <div class="icon-menu js-toggle-nav">
                     <div class="icon-menu-item"></div>
                     <div class="icon-menu-item"></div>
                     <div class="icon-menu-item"></div>
@@ -24,16 +26,30 @@
                 <li class="navigation-item"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
                 <li class="navigation-item"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
                 <li class="navigation-item"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
-                <li class="navigation-item"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+                <li class="navigation-item"><a class="foter-item-txt-link" href="news.php">TE REJAT</a></li>
             </ul>
             <ul class="logo-social" type="none">
-                <li><img src="./Fotot/facebook.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/instagram.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/pinterest.png" class="logo-social-item"></li>
-                <li><img src="./Fotot/twitter.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/facebook.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/instagram.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/pinterest.png" class="logo-social-item"></li>
+                    <li><img src="./public/Fotot/twitter.png" class="logo-social-item"></li>
+                </ul>
+        </div>
+        </div>
+    </header>
+    <aside class="aside-navigation js-sidenav">
+        <div class="aside-navigation-bg js-nav-bg"></div>
+       <div class="aside-navigation-main">
+            <ul type="none" class="aside-navigation-list">
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="home.php">BALLINA</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="aboutUs.php">RRETH NESH</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="contactUS.php">NA KONTAKTONI</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="news.php">TE REJAT</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="loginForm.php">KYQU</a></li>
+                <li class="aside-navigation-link"><a class="foter-item-txt-link" href="logout.php">ÇKYQU</a></li>
             </ul>
-        </header>
-    </div>
+       </div>
+    </aside>
     <hr>
     <div class="body">
         <div class="conteiner">
@@ -64,7 +80,7 @@
                     <p class="content-right-side-text">Nëse keni një sygjerim, verejtje apo kritik për ne, apo ndonjë
                         lloj pyetjeje në lidhje me
                         Shëndetin, mund të dërgoni mesazhe nga këtu. Është kënaqësi t'ju ndihmojmë.</p>
-                    <form name="contact-form">
+                    <form name="contact-form" action="contactUs.php" method="post">
                         <div class="form-control">
                             <input name="name" placeholder="Enter your name" class="input-box">
                             <div class="error hide">Ju lutem shenoni emrin</div>
@@ -78,14 +94,16 @@
                             <div class="error hide">Ju lutemi plotësoni kutinë e tekstit!</div>
                         </div>
                         <div>
-                            <button type="submit" class="button"> Dërgo </button>
+                            <input type="submit" class="button" value="Dergo" name="contactbtn">
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <?php require_once '../controller/contactUsController.php';?>
     <script src="./public/js/contactUS.js"></script>
+    <script src="./public/js/sidenav.js" ></script>
 </body>
 
 </html>

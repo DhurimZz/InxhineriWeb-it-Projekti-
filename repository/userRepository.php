@@ -20,8 +20,9 @@ class UserRepository {
         $email = $user->getEmail();
         $password = $user->getPassword();
         $country = $user->getCountry();
+        $role = $user->getRole();;
 
-        $sql = "INSERT INTO user VALUES('$id','$name', '$surname',' $birthyear','$gender','$email','$password','$country')";
+        $sql = "INSERT INTO user VALUES('$id','$name', '$surname',' $birthyear','$gender','$email','$password','$country','$role')";
         if(mysqli_query($conn,$sql)){
             // echo "query is executed succesfuly";
             echo '<script> location.replace("http://localhost/InxhineriWeb-it-Projekti-/view/loginForm.php"); </script>';

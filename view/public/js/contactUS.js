@@ -35,10 +35,10 @@ const validateInputs = () => {
   };
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
     shouldValidate = true;
     validateInputs();
-    if (isFormValid) {
+    if (!isFormValid) {
+      e.preventDefault();
     }
   });
 
